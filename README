@@ -1,0 +1,162 @@
+
+💡 Movie Rating Prediction – Task 2 (CodSoft Internship)
+Objective:
+To build a machine learning model that predicts the IMDb rating of a movie based on its genre, director, actors, and runtime.
+
+Tools Used:
+
+Python, Pandas, NumPy
+
+Scikit-learn (for ML)
+
+Matplotlib, Seaborn (for visualization)
+
+Steps Taken:
+
+Loaded and cleaned the dataset
+
+Encoded categorical features
+
+Trained a linear regression model
+
+Evaluated the model with RMSE and R² score
+
+Results:
+
+RMSE: 1.35
+
+R² Score: 0.023
+
+Conclusion:
+The model was able to make basic predictions of movie ratings using features like genre and director. Further improvements can be made by adding more data and using advanced models like Random Forest.
+
+Task 4 – Sales Prediction Using Python
+🎯 Objective
+The objective of this project is to build a regression model that predicts product sales based on advertising spend across different media: TV, Radio, and Newspaper.
+
+This task showcases the use of machine learning for business forecasting and demonstrates important skills in data preprocessing, model training, and evaluation.
+
+📂 Dataset
+Source: Kaggle
+
+Dataset: Sales Prediction Dataset (Simple Linear Regression)
+
+File: Advertising.csv
+
+The dataset includes:
+
+TV – advertising budget on TV
+
+Radio – advertising budget on radio
+
+Newspaper – advertising budget on newspapers
+
+Sales – units sold (target column)
+
+🛠️ Tools and Libraries Used
+Python
+
+Jupyter Notebook
+
+Libraries:
+pandas, numpy, matplotlib, seaborn, scikit-learn
+
+📈 Steps Followed
+Loaded the dataset using Pandas
+
+Explored and cleaned the data (no missing values)
+
+Visualized data relationships using:
+
+Correlation heatmap
+
+Scatter plots (Sales vs TV/Radio/Newspaper)
+
+Split the data into training and test sets (80/20)
+
+Trained a Linear Regression model
+
+Predicted sales on test data
+
+Evaluated the model using multiple metrics
+
+Visualized Actual vs Predicted Sales
+
+ Task 5 – Credit Card Fraud Detection
+🎯 Objective
+The objective of this project is to develop a machine learning classification model to detect fraudulent credit card transactions based on transaction data.
+
+Fraud detection is critical in the banking and financial industry to prevent loss and secure user data. This project uses logistic regression and handles class imbalance, which is common in fraud-related datasets.
+
+📂 Dataset
+Source: Credit Card Fraud Detection Dataset – Kaggle
+
+File used: creditcard.csv
+
+Target Column: Class
+
+0 → Genuine
+
+1 → Fraudulent
+
+The dataset contains:
+
+284,807 transactions
+
+492 fraudulent transactions (~0.17%)
+
+Features V1 to V28 (anonymized)
+
+Amount and Time
+
+🛠️ Tools and Libraries Used
+Python 🐍
+
+Jupyter Notebook
+
+Libraries: pandas, numpy, matplotlib, seaborn, scikit-learn
+
+⚙️ Steps Followed
+Loaded and explored the dataset
+
+Checked class imbalance — only 492 frauds out of 284,807 transactions
+
+Balanced the data using undersampling (492 fraud + 492 genuine)
+
+Split the balanced data into train/test sets
+
+Trained a Logistic Regression model
+
+Predicted and evaluated using confusion matrix and classification report
+
+Visualized results using heatmaps
+
+📊 Model Evaluation
+🔸 Confusion Matrix:
+lua
+Copy code
+[[82  5]
+ [ 9 101]]
+🔸 Classification Report:
+Metric	Class 0 (Genuine)	Class 1 (Fraud)
+Precision	0.90	0.95 ✅
+Recall	0.94 ✅	0.92
+F1-Score	0.92	0.94 ✅
+
+✅ Accuracy: 93%
+✅ F1-Score for Fraud: 94% — which is great for imbalanced problems
+
+📉 Visualization
+✅ Class Imbalance Plot (before and after balancing)
+
+✅ Confusion Matrix Heatmap
+
+🎥 Demo Video
+📌 [Add your video link or screen recording here]
+✅ Show your code, evaluation metrics, and graphs
+
+✅ Conclusion
+This project demonstrates the importance of handling class imbalance and using proper evaluation metrics (like Precision & Recall) for fraud detection.
+
+With just Logistic Regression, the model was able to catch 92% of actual frauds and achieved a F1-Score of 94%. More advanced models (Random Forest, XGBoost) could further improve accuracy.
+
